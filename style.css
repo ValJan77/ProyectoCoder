@@ -6,35 +6,13 @@
 
 /* Fin del Style General */
 
-
-
-/* Style para el header */
-
-header{
+.navbarlocal{
     background-color: rgb(117, 53, 53);
-    display: flex;
-    height: 6em;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
- }
-
- .menu-container{
-    display: flex;
-    }
-
-.menu{
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
 }
 
-.logo-header{
+.logo{
     height: 80px;
     width: 80px;
-    margin: 5px;
     border-radius: 10%;
 }
 
@@ -65,19 +43,10 @@ header{
 
 }
 
-.menu-item{
-    margin: 40px;
-    font-size:larger;
-    font-weight: bold;
-    text-decoration: none;
+.header-item{
     color: white;
 }
 
-.menu-item:hover{
-    color: blanchedalmond;
-    font-weight: bolder;
-    text-decoration: underline;
-}
 
 /* End of style para el header */
 
@@ -99,9 +68,8 @@ header{
 .index-parte-central{
     display: flex;
     justify-content: space-around;
-    height: 47em;
+    height: 48em;
     align-items: center;
-    padding-top: 7em;
 }
 
 .index-multimedia{
@@ -117,16 +85,16 @@ header{
 }
 
 .index-tabla{
-    height: 5em;
+    height: 4em;
     width: 25em;
-    margin-top: 0.5em;
+    margin-top: 0.1em;
     border: solid;
     text-align: left;
 }
 
 .link-hasta-productos-container{
     display: flex;
-    margin-top: 0.5em;
+    margin-top: 0.2em;
     justify-content: center;
 }
 
@@ -134,7 +102,7 @@ header{
     text-decoration: none;
     border-style: double;
     color: black;
-    height: 1.2em;
+    height: 2em;
     font-size: small;
 }
 
@@ -330,7 +298,7 @@ header{
 
 footer{
     background-color: rgb(117, 53, 53);
-    height: 30%;
+    height: 4em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -340,6 +308,9 @@ footer{
 .footer-container-redes{
     list-style-type: none;
     display: flex;
+    align-items: center;
+    margin-top: 1em;
+
 }
 
 .redes{
@@ -358,6 +329,7 @@ footer{
 
 .footer-texto{
     margin-right: 40px;
+    margin-top: 1em;
 }
 
 /* Fin del Style para el footer */
@@ -385,9 +357,17 @@ footer{
 
 /* Style para el contacto */
 
-.contacto-provisorio{
-    height: 60em;
-    padding-top: 10em;
+.formulario-container{
+    height: 30em;
+    width: 30em;
+}
+
+.formulario-parte-central{
+    width: 100%;
+    height: 48em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Fin del style para el contacto */
