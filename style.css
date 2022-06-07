@@ -4,64 +4,34 @@
  font-family:'Calibri';
 }
 
-/* Fin del Style General */
-
-.navbarlocal{
-    background-color: rgb(117, 53, 53);
-}
-
-.logo{
-    height: 80px;
-    width: 80px;
-    border-radius: 10%;
-}
-
-.logo-header:hover{
-    animation: changeColor 8s;
-}
-
-@keyframes changeColor{
-    0%{
-        filter: brightness(0.25);
-    }
-
-    25%{
-        filter: brightness(1);
-    }
-
-    50%{
-        filter: brightness(1.5);
-    }
-
-    75%{
-        filter: brightness(1.75);
-    }
-
-    100%{
-        filter: brightness(2);
-    }
-
-}
-
-.header-item{
-    color: white;
-}
-
-
-/* End of style para el header */
-
-
-
-/* Style para la parte central comun */
-
-.parte-central{
-    background-color: blanchedalmond;
+html, body {
+    height: 100%;
     width: 100%;
 }
 
-/* Fin del style para la parte central comun */
+/* Fin del Style General */
 
+#header-item:hover{
+    background-color: blanchedalmond ;
+    color: rgb(117, 53, 53);
+}
 
+#header-item{
+    border-radius: 20%;
+    color: white;
+}
+
+.logo-header{
+    border-radius: 20%;
+}
+
+.logo-header:hover{
+    transform: scale(1.2) translateX(80px); 
+    filter: sepia(100%);
+    transition: all 3s;
+}
+
+/* End of style para el header */
 
 /* Style para la parte central del index */
 
@@ -70,6 +40,7 @@
     justify-content: space-around;
     height: 48em;
     align-items: center;
+    width: 100%;
 }
 
 .index-multimedia{
@@ -111,11 +82,25 @@
     color: white;
 }
 
+.main-index{
+    height: 51em;
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+    width: 100%;
+}
+
 /* Fin del style para la parte central del index */
 
 
 
 /* Style para los productos */
+
+.main-productos{
+    height: 51em;
+    background-color: blanchedalmond;
+    width: 100%;
+}
 
 .productos-container{
     display: flex;
@@ -165,10 +150,15 @@
 
 /* Style para La Granja */
 
+.main-la-granja{
+    background-color: blanchedalmond;
+    width: 100%;
+}
+
 .video-y-texto-la-granja{
     display: flex;
     justify-content: center;
-    padding-top: 7em;
+    padding-top: 2em;
     margin-bottom: 1em;
 }
 
@@ -193,7 +183,6 @@
     height: 90em;
     width: 100%;
     justify-content: center;
-    padding-bottom: 1em;
 }
 
 .foto-la-granja-container {
@@ -204,66 +193,8 @@
     grid-row-gap: 0.2em;
     height: 90em;
     width: 80em;
+    padding-bottom: 3em;
     }
-
-.foto-la-granja-1 { 
-    grid-area: 1 / 1 / 2 / 2;
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
- }
-.foto-la-granja-2 { 
-    grid-area: 1 / 2 / 2 / 3; 
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-3 { grid-area: 2 / 2 / 3 / 3;
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-4 { grid-area: 2 / 1 / 3 / 2;
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-5 { grid-area: 1 / 3 / 3 / 5;
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-6 { grid-area: 3 / 1 / 4 / 2;
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-7 { grid-area: 3 / 2 / 4 / 3; 
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-8 { grid-area: 3 / 3 / 4 / 4; 
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-9 { grid-area: 3 / 4 / 4 / 5; 
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-10 { grid-area: 4 / 1 / 6 / 3; 
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-11 { grid-area: 4 / 3 / 5 / 4; 
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-12 { grid-area: 4 / 4 / 5 / 5; 
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-13 { grid-area: 5 / 4 / 6 / 5; 
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
-.foto-la-granja-14 { grid-area: 5 / 3 / 6 / 4; 
-    background-image: url(multimedia/Imagenes/Campo.png);
-    background-size: cover;
-}
 
     
 /* Fin del style para La Granja */
@@ -274,7 +205,7 @@
 /* Style para la Ubicacion */
 
 .ubicacion-parte-mapa{
-    height: 54em;
+    height: 51em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,9 +215,13 @@
 }
 
 .ubicacion-mapa{
-    height: 30em;
+    height: 70%;
     width: 70em;
-    padding-top: 6em;
+
+}
+
+.main-ubicacion{
+    height: 51em;
 }
 
 /* Fin del style para la Ubicacion */
@@ -368,6 +303,12 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.main-contacto{
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 51em;
 }
 
 /* Fin del style para el contacto */
